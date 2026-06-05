@@ -6,7 +6,6 @@
 <title>HealthSaver RX</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -17,27 +16,28 @@ font-family:Arial,sans-serif;
 body{
 background:#f5fbfc;
 color:#1f2937;
+line-height:1.6;
 }
 
 header{
 background:#0b6e79;
-padding:20px;
+padding:18px;
 text-align:center;
 color:white;
-font-size:28px;
+font-size:30px;
 font-weight:bold;
 }
 
 .hero{
-padding:70px 20px;
-text-align:center;
 background:linear-gradient(135deg,#0b6e79,#18b77b);
 color:white;
+padding:80px 20px;
+text-align:center;
 }
 
 .hero h1{
-font-size:48px;
-margin-bottom:15px;
+font-size:50px;
+margin-bottom:20px;
 }
 
 .hero p{
@@ -56,11 +56,7 @@ text-decoration:none;
 font-weight:bold;
 border-radius:50px;
 font-size:18px;
-transition:.3s;
-}
-
-.btn:hover{
-transform:translateY(-3px);
+box-shadow:0 10px 20px rgba(0,0,0,.15);
 }
 
 .section{
@@ -79,8 +75,8 @@ color:#0b6e79;
 .cards{
 display:flex;
 flex-wrap:wrap;
-gap:20px;
 justify-content:center;
+gap:20px;
 }
 
 .card{
@@ -88,7 +84,7 @@ background:white;
 width:300px;
 padding:25px;
 border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
+box-shadow:0 10px 25px rgba(0,0,0,.08);
 text-align:center;
 }
 
@@ -100,8 +96,8 @@ margin-bottom:10px;
 .steps{
 display:flex;
 flex-wrap:wrap;
-gap:20px;
 justify-content:center;
+gap:20px;
 }
 
 .step{
@@ -109,56 +105,65 @@ background:white;
 width:250px;
 padding:25px;
 border-radius:15px;
-text-align:center;
 box-shadow:0 10px 25px rgba(0,0,0,.08);
+text-align:center;
 }
 
 .number{
 width:50px;
 height:50px;
+line-height:50px;
+margin:auto;
 background:#18b77b;
 color:white;
-line-height:50px;
 border-radius:50%;
-margin:auto;
 font-size:22px;
 font-weight:bold;
 margin-bottom:15px;
+}
+
+.timer-section{
+background:#f0fdf4;
+text-align:center;
+padding:60px 20px;
+}
+
+#countdown{
+font-size:50px;
+font-weight:bold;
+color:#18b77b;
+margin:20px 0;
 }
 
 .cta{
 background:#0b6e79;
 color:white;
 text-align:center;
-padding:70px 20px;
+padding:80px 20px;
 }
 
 .cta h2{
-font-size:40px;
+font-size:42px;
 margin-bottom:20px;
 }
 
 .cta-btn{
 display:inline-block;
-padding:18px 40px;
+padding:20px 45px;
 background:#18b77b;
 color:white;
 text-decoration:none;
-border-radius:50px;
-font-size:20px;
+font-size:22px;
 font-weight:bold;
+border-radius:50px;
 box-shadow:0 10px 25px rgba(24,183,123,.4);
-}
-
-.cta-btn:hover{
-opacity:.9;
 }
 
 footer{
 background:#111827;
 color:#d1d5db;
-padding:20px;
 text-align:center;
+padding:20px;
 }
 
 @media(max-width:768px){
@@ -171,10 +176,12 @@ font-size:34px;
 font-size:28px;
 }
 
+.card,.step{
+width:100%;
 }
 
+}
 </style>
-
 </head>
 
 <body>
@@ -185,19 +192,19 @@ HealthSaver RX
 
 <section class="hero">
 
-<h1>Save Up To 80% On Prescriptions</h1>
+<h1>Save Up To 80% On Prescription Medications</h1>
 
 <p>
-Get access to huge savings on prescription medications at thousands of participating pharmacies nationwide.
+Get instant access to exclusive pharmacy discounts and start saving today.
 </p>
 
-<a href="#benefits" class="btn">
+<a href="#offer" class="btn">
 Start Saving Today
 </a>
 
 </section>
 
-<section class="section" id="benefits">
+<section class="section">
 
 <h2 class="section-title">
 Why Choose HealthSaver RX?
@@ -206,24 +213,18 @@ Why Choose HealthSaver RX?
 <div class="cards">
 
 <div class="card">
-<h3>Lower Costs</h3>
-<p>
-Save money on prescription medications every month.
-</p>
+<h3>💊 Lower Costs</h3>
+<p>Save money on prescription medications every month.</p>
 </div>
 
 <div class="card">
-<h3>65,000+ Pharmacies</h3>
-<p>
-Accepted nationwide at participating locations.
-</p>
+<h3>🏥 65,000+ Pharmacies</h3>
+<p>Accepted nationwide at participating locations.</p>
 </div>
 
 <div class="card">
-<h3>Free Signup</h3>
-<p>
-Quick registration with no hidden fees.
-</p>
+<h3>⚡ Free Signup</h3>
+<p>Quick registration with no hidden fees.</p>
 </div>
 
 </div>
@@ -253,12 +254,12 @@ How It Works
 <div class="step">
 <div class="number">3</div>
 <h3>Visit Pharmacy</h3>
-<p>Show the card when purchasing medicine.</p>
+<p>Show your card when purchasing medicine.</p>
 </div>
 
 <div class="step">
 <div class="number">4</div>
-<h3>Save Money</h3>
+<h3>Start Saving</h3>
 <p>Enjoy discounts on eligible prescriptions.</p>
 </div>
 
@@ -266,25 +267,88 @@ How It Works
 
 </section>
 
-<section class="cta">
+<section class="timer-section">
+
+<h2>⏳ Limited Time Offer</h2>
+
+<div id="countdown">05:00</div>
+
+<p>Claim your savings before the timer runs out.</p>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Trusted By Thousands
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>⭐ 4.9/5 Rating</h3>
+<p>Thousands of happy users trust our service.</p>
+</div>
+
+<div class="card">
+<h3>🔒 Secure & Private</h3>
+<p>Your information is always protected.</p>
+</div>
+
+<div class="card">
+<h3>💰 Big Savings</h3>
+<p>Save up to 80% on eligible medications.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="cta" id="offer">
 
 <h2>
 Start Saving Today
 </h2>
 
 <p style="margin-bottom:30px;">
-Join thousands of users already saving on prescriptions.
+Join thousands already saving on prescriptions.
 </p>
 
-<a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">
-Claim My Discount Now
+<a
+href="https://linkthem.net/aff_c?offer_id=2738&aff_id=168904"
+target="_blank"
+class="cta-btn">
+
+🚀 Claim My Discount Now
+
 </a>
 
 </section>
 
 <footer>
-© 2026 HealthSaver RX. All Rights Reserved.
+© 2026 HealthSaver RX | All Rights Reserved
 </footer>
+
+<script>
+
+let time = 300;
+
+setInterval(function(){
+
+let minutes = Math.floor(time/60);
+let seconds = time%60;
+
+document.getElementById("countdown").innerHTML =
+String(minutes).padStart(2,'0') + ":" +
+String(seconds).padStart(2,'0');
+
+if(time>0){
+time--;
+}
+
+},1000);
+
+</script>
 
 </body>
 </html>
